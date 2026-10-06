@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" role="img" aria-labelledby="title description">
+  <title id="title">How a voice move works</title>
+  <desc id="description">Speak a chess move, the browser recognizes it and chess.js checks the move, then the computer makes a random legal reply.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1d2636"/>
+      <stop offset="1" stop-color="#34282d"/>
+    </linearGradient>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0 0 10 5 0 10z" fill="#d9a3a3"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="300" rx="22" fill="url(#background)"/>
+  <text x="600" y="54" text-anchor="middle" fill="#f7eeee" font-family="Arial, sans-serif" font-size="25" font-weight="700">A move from voice to board</text>
+  <rect x="42" y="92" width="315" height="150" rx="16" fill="#f2d9b8"/>
+  <circle cx="82" cy="132" r="22" fill="#8a6666"/>
+  <text x="82" y="140" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="21" font-weight="700">1</text>
+  <text x="120" y="139" fill="#2b2424" font-family="Arial, sans-serif" font-size="21" font-weight="700">Speak a move</text>
+  <text x="68" y="184" fill="#504747" font-family="Arial, sans-serif" font-size="18">Allow microphone access</text>
+  <text x="68" y="214" fill="#504747" font-family="Arial, sans-serif" font-size="18">Example: “e4”</text>
+  <path d="M374 168h62" stroke="#d9a3a3" stroke-width="4" marker-end="url(#arrow)"/>
+  <rect x="448" y="92" width="315" height="150" rx="16" fill="#f2d9b8"/>
+  <circle cx="488" cy="132" r="22" fill="#8a6666"/>
+  <text x="488" y="140" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="21" font-weight="700">2</text>
+  <text x="526" y="139" fill="#2b2424" font-family="Arial, sans-serif" font-size="21" font-weight="700">Validate the move</text>
+  <text x="474" y="184" fill="#504747" font-family="Arial, sans-serif" font-size="18">Speech recognition returns text</text>
+  <text x="474" y="214" fill="#504747" font-family="Arial, sans-serif" font-size="18">chess.js checks legal moves</text>
+  <path d="M780 168h62" stroke="#d9a3a3" stroke-width="4" marker-end="url(#arrow)"/>
+  <rect x="854" y="92" width="304" height="150" rx="16" fill="#f2d9b8"/>
+  <circle cx="894" cy="132" r="22" fill="#8a6666"/>
+  <text x="894" y="140" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="21" font-weight="700">3</text>
+  <text x="932" y="139" fill="#2b2424" font-family="Arial, sans-serif" font-size="21" font-weight="700">Computer replies</text>
+  <text x="880" y="184" fill="#504747" font-family="Arial, sans-serif" font-size="18">Random legal move</text>
+  <text x="880" y="214" fill="#504747" font-family="Arial, sans-serif" font-size="18">History updates</text>
+</svg>

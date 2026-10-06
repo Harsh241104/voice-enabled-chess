@@ -55,6 +55,30 @@ button:hover{
     background-color: #2d2929;
 }
 
+.voice-status{
+    margin-top: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    min-height: 44px;
+    width: 400px;
+    background-color: #f2f2f2;
+    color: #241d1d;
+    font-size: 0.9rem;
+}
+
+.voice-status[data-state="listening"]{
+    background-color: #fff4d6;
+}
+
+.voice-status[data-state="success"]{
+    background-color: #e3f4e5;
+}
+
+.voice-status[data-state="error"]{
+    background-color: #f9e1e1;
+}
+
 .move-history{
     margin-top: 20px;
     border: 1px solid #ccc;
