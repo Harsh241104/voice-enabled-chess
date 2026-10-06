@@ -1,77 +1,95 @@
-# Voice-Enabled Chess ♟️
+# Voice-Enabled Chess
 
-A modern, voice-controlled chess application that lets you play chess using voice commands and visual feedback.
+A lightweight browser-based chess game with voice command support. Players can move pieces using the mouse or by speaking commands, and the app tracks move history while the computer makes random moves for the opponent.
+
+## Live demo
+
+Open the project in a browser and run the app from the `min project 2` folder.
 
 ## Features
 
-✨ **Voice Control**: Play chess hands-free using voice commands  
-🎮 **Interactive UI**: Clean, intuitive interface for chess gameplay  
-📱 **Responsive Design**: Works seamlessly across different screen sizes  
-🤖 **AI Integration**: Voice recognition and processing capabilities  
+- Chess board UI with draggable pieces
+- Voice recognition for move commands
+- Move history panel
+- Play again reset option
+- Random computer opponent
+- Responsive single-page web app
 
 ## Tech Stack
 
-- **Frontend**: HTML, CSS, JavaScript
-- **Voice Processing**: Web Speech API
-- **Game Logic**: Custom chess engine implementation
+- HTML
+- CSS
+- JavaScript
+- Chessboard.js
+- Chess.js
+- Web Speech API
 
-## Project Structure
+## Project structure
 
-```
+```text
 voice-enabled-chess/
-├── min project 2/          # Main project directory
-├── README.md               # Project documentation
+├── README.md
+├── min project 2/
+│   ├── index.html
+│   ├── style.css
+│   ├── script.js
+│   ├── css/
+│   ├── js/
+│   └── img/
 └── ...
 ```
 
-## Installation
+## How to run
 
 1. Clone the repository:
-   ```bash
-   git clone https://github.com/Harsh241104/voice-enabled-chess.git
-   ```
 
-2. Navigate to the project directory:
-   ```bash
-   cd voice-enabled-chess
-   ```
+```bash
+git clone https://github.com/Harsh241104/voice-enabled-chess.git
+```
 
-3. Open `index.html` in your web browser (or set up a local server)
+2. Open the project folder:
 
-## Usage
+```bash
+cd voice-enabled-chess
+```
 
-1. Start the application
-2. Use voice commands to make chess moves:
-   - Speak piece names (e.g., "Move pawn to e4")
-   - Listen for voice feedback on moves
-3. Play against AI or another player
+3. Open `min project 2/index.html` in a browser.
 
-## Voice Commands
+4. Click `Start Voice Command` and speak a valid chess move such as:
 
-- "Move [piece] from [position] to [position]"
-- "Castle kingside / queenside"
-- "Resign"
-- "New game"
+- `e4`
+- `Nf3`
+- `move pawn to e4`
+- `castle kingside`
 
-## Browser Support
+Note: Voice support depends on browser support for the Web Speech API (best in Chrome/Edge).
 
-- Chrome/Edge (recommended)
-- Firefox
-- Safari
-- Any modern browser with Web Speech API support
+## Gameplay
 
-## Contributing
+- White is treated as the player's side.
+- Pieces can be dragged directly on the board.
+- Voice input is processed through the browser speech recognition API.
+- The app validates moves using `chess.js`.
+- After each player move, the computer plays a random legal move.
+- Move history is displayed in the bottom panel.
 
-Contributions are welcome! Please feel free to submit a Pull Request.
+## Notes
+
+This project is a simple demonstration of integrating chess logic and browser voice recognition into a front-end web app.
+
+## Future improvements
+
+- Better voice command parsing
+- Human-vs-human mode
+- Stockfish or stronger AI opponent
+- Move validation feedback and hints
+- Better sound and animation
+- UI polish and accessibility improvements
 
 ## License
 
-This project is open source and available under the MIT License.
+This project is currently provided as a personal/open project for learning and experimentation.
 
 ## Author
 
-Created by [Harsh241104](https://github.com/Harsh241104)
-
----
-
-**Note**: This is an ongoing project. Feel free to explore the code and make suggestions!
+Harsh241104
